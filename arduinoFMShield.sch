@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,13 +39,13 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -186,12 +186,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="+3V3">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -204,19 +198,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -9049,15 +9030,15 @@ Reichelt
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="IC1" library="Arduino-AVR" deviceset="ATMEGA168" device="-MU"/>
-<part name="IC2" library="ftdichip" deviceset="FT232R" device="Q"/>
+<part name="IC1" library="Arduino-AVR" deviceset="ATMEGA168" device="-AU" value="ATMEGA168-AU"/>
+<part name="IC2" library="ftdichip" deviceset="FT232R" device="L" value="FT232RL"/>
 <part name="X1" library="con-cypressindustries" deviceset="MINI-USB-" device="32005-301" value="MINI-USB-32005-301"/>
 <part name="U$2" library="ipod_con" deviceset="IPOD-DOCK-CONNECTOR" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="VUSB" library="supply1" deviceset="VCC" device="" value="VUSB"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0805" value="680"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0805" value="680"/>
@@ -9073,7 +9054,7 @@ Reichelt
 <part name="LED1" library="eagle-ltspice" deviceset="LED_E" device="SML0603"/>
 <part name="LED2" library="eagle-ltspice" deviceset="LED_E" device="SML0603"/>
 <part name="LED3" library="eagle-ltspice" deviceset="LED_E" device="SML0603"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="MBR0520LT" device=""/>
 <part name="VUSB1" library="supply1" deviceset="VCC" device="" value="VUSB"/>
@@ -9084,14 +9065,10 @@ Reichelt
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="VUSB3" library="supply1" deviceset="VCC" device="" value="VUSB"/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="R10" library="rcl" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="R0805" value="1k"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -9099,11 +9076,13 @@ Reichelt
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="VUSB4" library="supply1" deviceset="VCC" device="" value="VUSB"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="R12" library="rcl" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="U$3" library="murata-resonators" deviceset="CSTCE_V" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
+<part name="VUSB5" library="supply1" deviceset="VCC" device="" value="VUSB"/>
+<part name="VUSB6" library="supply1" deviceset="VCC" device="" value="VUSB"/>
 </parts>
 <sheets>
 <sheet>
@@ -9152,14 +9131,10 @@ Reichelt
 <instance part="R8" gate="G$1" x="-26.67" y="107.95" rot="R180"/>
 <instance part="R9" gate="G$1" x="-26.67" y="113.03" rot="R180"/>
 <instance part="VUSB3" gate="VCC" x="-48.26" y="123.19"/>
-<instance part="P+5" gate="1" x="185.42" y="124.46"/>
-<instance part="P+12" gate="1" x="193.04" y="124.46"/>
 <instance part="+3V1" gate="G$1" x="31.75" y="60.96"/>
 <instance part="+3V2" gate="G$1" x="-6.35" y="66.04"/>
 <instance part="+3V3" gate="G$1" x="-16.51" y="66.04"/>
 <instance part="+3V4" gate="G$1" x="-24.13" y="66.04"/>
-<instance part="R10" gate="G$1" x="-45.72" y="146.05" rot="R180"/>
-<instance part="R11" gate="G$1" x="-45.72" y="138.43" rot="R180"/>
 <instance part="+3V6" gate="G$1" x="-34.29" y="130.81" rot="R90"/>
 <instance part="P+1" gate="VCC" x="88.9" y="19.05"/>
 <instance part="P+2" gate="VCC" x="85.09" y="140.97"/>
@@ -9172,6 +9147,8 @@ Reichelt
 <instance part="SUPPLY14" gate="GND" x="95.25" y="21.59"/>
 <instance part="U$3" gate="G$1" x="109.22" y="27.94" rot="R270"/>
 <instance part="SUPPLY2" gate="GND" x="99.06" y="27.94" rot="R270"/>
+<instance part="VUSB5" gate="VCC" x="185.42" y="121.92"/>
+<instance part="VUSB6" gate="VCC" x="193.04" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -9284,11 +9261,6 @@ Reichelt
 <wire x1="125.73" y1="83.82" x2="125.73" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="190.5" y1="-40.64" x2="190.5" y2="-43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="S1" gate="1" pin="P1"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
 <wire x1="95.25" y1="26.67" x2="95.25" y2="25.4" width="0.1524" layer="91"/>
@@ -9301,6 +9273,11 @@ Reichelt
 <segment>
 <pinref part="U$3" gate="G$1" pin="VSS"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<wire x1="190.5" y1="-40.64" x2="190.5" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -9368,9 +9345,9 @@ Reichelt
 <label x="208.28" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="146.05" x2="-57.15" y2="146.05" width="0.1524" layer="91"/>
 <label x="-58.42" y="146.05" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="19)SERIAL-TX"/>
+<wire x1="-57.15" y1="146.05" x2="-17.78" y2="146.05" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -9385,9 +9362,11 @@ Reichelt
 <label x="208.28" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-50.8" y1="138.43" x2="-57.15" y2="138.43" width="0.1524" layer="91"/>
 <label x="-58.42" y="138.43" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="18)SERIAL-RX"/>
+<wire x1="-17.78" y1="143.51" x2="-38.1" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="143.51" x2="-38.1" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="138.43" x2="-57.15" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -9487,6 +9466,16 @@ Reichelt
 <wire x1="127" y1="109.22" x2="127" y2="111.76" width="0.1524" layer="91"/>
 <junction x="127" y="111.76"/>
 </segment>
+<segment>
+<pinref part="VUSB5" gate="VCC" pin="VCC"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="185.42" y1="119.38" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VUSB6" gate="VCC" pin="VCC"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="193.04" y1="119.38" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="LAUDIO" class="0">
 <segment>
@@ -9579,18 +9568,6 @@ Reichelt
 <wire x1="-21.59" y1="113.03" x2="-17.78" y2="113.03" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="185.42" y1="121.92" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+12" gate="1" pin="+5V"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="193.04" y1="121.92" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -9628,22 +9605,6 @@ Reichelt
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="72.39" y1="132.08" x2="64.77" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="132.08" x2="64.77" y2="138.43" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="19)SERIAL-TX"/>
-<wire x1="-40.64" y1="146.05" x2="-17.78" y2="146.05" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="18)SERIAL-RX"/>
-<wire x1="-17.78" y1="143.51" x2="-38.1" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="143.51" x2="-38.1" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="138.43" x2="-40.64" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
